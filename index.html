@@ -7,25 +7,34 @@
 <style>
 body{font-family:Arial;margin:0;background:#eef6ff;text-align:center}
 .header{background:#004aad;color:white;padding:25px}
+.hero{width:100%;height:240px;overflow:hidden;position:relative}
+.hero img{width:100%;height:100%;object-fit:cover}
+.hero-text{position:absolute;bottom:0;left:0;right:0;background:rgba(0,0,0,0.6);color:white;padding:10px}
 .box{background:white;margin:15px;padding:20px;border-radius:15px;max-width:500px;margin-left:auto;margin-right:auto;box-shadow:0 3px 10px rgba(0,0,0,0.1);text-align:left}
 .price{color:#16a34a;font-weight:bold}
-.item{margin-top:12px;font-weight:bold;color:#333;display:flex;justify-content:space-between;border-bottom:1px solid #eee;padding:8px 0}
-.btn{display:block;background:#25D366;color:white;padding:16px;text-align:center;border-radius:12px;text-decoration:none;font-weight:bold;margin-top:15px;font-size:18px}
+.item{margin-top:12px;display:flex;justify-content:space-between;border-bottom:1px solid #eee;padding:8px 0}
+.btn{display:block;background:#25D366;color:white;padding:16px;text-align:center;border-radius:12px;text-decoration:none;font-weight:bold;margin-top:15px;font-size:18px;animation:pulse 2s infinite}
+@keyframes pulse{0%{transform:scale(1)}50%{transform:scale(1.05)}100%{transform:scale(1)}}
 .map-box{margin:15px;border-radius:15px;overflow:hidden}
 .footer{background:#333;color:white;padding:15px}
 iframe{width:100%;height:350px;border:0}
 </style>
 </head>
 <body>
+
 <div class="header">
-<h1>🚛 BAITE CAR WASH</h1>
+<h1>🚚 BAITE CAR WASH</h1>
 <p>Maungu - Mombasa Road - Best Service</p>
 <p>Call: 0726 772 312</p>
 </div>
 
+<div class="hero">
+<img src="truck.jpg" alt="Baite Truck Wash">
+<div class="hero-text">Professional Truck & Lorry Wash - Maungu</div>
+</div>
+
 <div class="box">
 <h2 style="text-align:center">Bei Zetu / Our Prices</h2>
-
 <div class="item"><span>Flat Belt</span><span class="price">350 KES</span></div>
 <div class="item"><span>Tipper</span><span class="price">400 KES</span></div>
 <div class="item"><span>Tanker</span><span class="price">500 KES</span></div>
@@ -37,7 +46,7 @@ iframe{width:100%;height:350px;border:0}
 <div class="item"><span>Cabin Horse</span><span class="price">250 KES</span></div>
 <div class="item"><span>Inside Container</span><span class="price">200 KES</span></div>
 
-<a class="btn" href="https://wa.me/254726772312?text=Habari%20Baite%20Car%20Wash%20Niko%20Na%20Gari">Book on WhatsApp 📲</a>
+<a class="btn" href="https://wa.me/254726772312?text=Habari%20Baite%20Car%20Wash%20Niko%20Na%20Gari">Book on WhatsApp 📱</a>
 <p style="text-align:center;margin-top:10px">Open: 6am - 7pm Daily</p>
 </div>
 
@@ -50,6 +59,9 @@ iframe{width:100%;height:350px;border:0}
 <iframe src="https://maps.google.com/maps?q=Maungu%20Kenya&t=&z=15&ie=UTF8&iwloc=&output=embed"></iframe>
 </div>
 
-<div class="footer">© 2026 Baite Car Wash - Maungu</div>
+<div class="footer">
+<p>BAITE CAR WASH MAUNGU © 2024</p>
+</div>
+
 </body>
 </html>
